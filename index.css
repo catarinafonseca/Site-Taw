@@ -1,0 +1,15 @@
+.jumbotron {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+.Botao{
+    border-radius: 8px;
+    background-color: #808080;
+}
+.email{
+    background-color: black;
+    border-top: black;
+    border-right: black;
+    border-left: black;
+}
