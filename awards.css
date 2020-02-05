@@ -5,3 +5,7 @@ table,th,td{
     text-align: center;
     margin: 40px;
 }
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
