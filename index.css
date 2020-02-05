@@ -1,5 +1,6 @@
-.jumbotron {
+#header {
     background-color: black;
+    padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
 }
@@ -12,4 +13,18 @@
     border-top: black;
     border-right: black;
     border-left: black;
+}
+#footer{
+    background-color: black;
+    color: white;
+}
+body{
+    background-image: linear-gradient(white,black) ;
+}
+.p1{
+    margin:20px;
+    color: black;
+}
+.img{
+    margin:20px;
 }
