@@ -1,38 +1,99 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
+
 <head>
-  <title>Demi Lovato oficial</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  </head>
+    <title>Demi Lovato oficial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="info.css">
+</head>
+
 <body>
-
-<div class="jumbotron text-left" style="margin-bottom:0" id="header">
-  <h1>Demi Lovato</h1>
-  <p>Love is louder than the pressure to be perfect.</p> 
-</div>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-     
+    <div class="jumbotron text-left" style="margin-bottom:0" id="header">
+        <h1>Demi Lovato</h1>
+        <p>Love is louder than the pressure to be perfect.</p>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="info.html">Info</a></li>
-        <li><a href="#">Merch</a></li>
-        <li><a href="#">Awards</a></li>
-      </ul>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="info.html">Info</a></li>
+                    <li><a href="#">Merch</a></li>
+                    <li><a href="#">Awards</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="img"><img src="demi.jpg" width="300" height="500"></div>
+                <hr class="hidden-sm hidden-md hidden-lg">
+            </div>
+            <div class="col-sm-8">
+                <h2><u>BIOGRAPHY</u></h2>
+                <ul>
+                    <li><b>Name:</b>Demetria Devonne Lovato</li>
+                    <li><b>Born:</b>August 20, 1992</li>
+                    <li><b>Occupation:</b><ul>
+                        <li>Singer</li>
+                        <li>Songwriter</li>
+                        <li>Actress</li>
+                        <li>Television personality</li>
+                        <li>Activist</li>
+                        <li>Author</li>
+                    </ul></li>
+                    <li><b>Genres:</b><ul>
+                        <li>Pop</li>
+                        <li>Pop Rock</li>
+                        <li>R&B</li>
+                    </ul></li>
+                    <li><b>Labels:</b><ul>
+                        <li>Walt Disney</li>
+                        <li>Hollywood</li>
+                        <li>Island</li>
+                        <li>Safehouse</li>                        
+                    </ul></li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
+
+    <div class="jumbotron text-left" style="margin-bottom:0" id="footer">
+        <p>Subscribe for new updates</p>
+        <fieldset>
+            <div>
+                <input required="required" class="email form-text form-email required"
+                    placeholder="Email Address (Required)" autocomplete="email" type="email"
+                    id="edit-submitted-email-address" name="submitted[email_address]">
+            </div>
+            <div>
+                <label for="Terms">I agree to the reservation policy</label>
+                <input type="checkbox" name="Terms" id="Terms">
+            </div>
+            <br>
+
+            <div>
+                <input type="submit" class="Botao">
+            </div>
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
