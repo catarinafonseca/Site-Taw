@@ -21,6 +21,5 @@
 .product-grid2 .title a{columns: #000000;}
 .product-grid2 .title a:hover{columns: #000000;}
 .product-grid2 .price{color:#000000;font-size:15px}
-.btn{justify-content: right;}
 @media screen and (max-width:990px){.product-grid2{margin-bottom:30px}
 }
