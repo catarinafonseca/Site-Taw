@@ -6,14 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="geral.css">
     <link rel="stylesheet" type="text/css" href="merch.css">
-    <script src="merch.js"></script>
 </head>
 
 <body>
@@ -59,7 +56,8 @@
                         <div class="card-block">
                             <h4 class="card-title">T-shirt Tell Me You Love Me</h4>
                             <p class="card-text">Price: $99.99</p>
-                            <a href="#" data-name="tshirtlove" data-price="99.99" class="add-to-cart btn btn-primary">Add
+                            <a href="#" data-name="tshirtlove" data-price="99.99"
+                                class="add-to-cart btn btn-primary">Add
                                 to cart</a>
                         </div>
                     </div>
@@ -152,28 +150,29 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+
+                        </table>
+                        <div>Total price: $<span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Order now</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <table class="show-cart table">
-                    
-                  </table>
-                  <div>Total price: $<span class="total-cart"></span></div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Order now</button>
-                </div>
-              </div>
             </div>
-          </div> 
+        </div>
         <div class="jumbotron text-left" style="margin-bottom:0" id="footer">
             <p>Subscribe for new updates</p>
             <fieldset>
@@ -193,7 +192,9 @@
                 </div>
             </fieldset>
         </div>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="merch.js"></script>
 </body>
 
 </html>
