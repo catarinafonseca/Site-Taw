@@ -1,11 +1,4 @@
 alert('This shop uses dolar($) as its oficial coin! ');
-$(document).on('show.bs.modal', '.modal', function () {
-  var zIndex = 1040 + (10 * $('.modal:visible').length);
-  $(this).css('z-index', zIndex);
-  setTimeout(function() {
-      $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
-  }, 0);
-});
 
 var shoppingCart = (function() {
     // =============================
@@ -74,24 +67,7 @@ var shoppingCart = (function() {
       }
       saveCart();
     }
-  
-    // Remove all items from cart
-    obj.removeItemFromCartAll = function(name) {
-      for(var item in cart) {
-        if(cart[item].name === name) {
-          cart.splice(item, 1);
-          break;
-        }
-      }
-      saveCart();
-    }
-  
-    // Clear cart
-    obj.clearCart = function() {
-      cart = [];
-      saveCart();
-    }
-  
+    
     // Count cart 
     obj.totalCount = function() {
       var totalCount = 0;
@@ -156,9 +132,9 @@ var shoppingCart = (function() {
       output += "<tr>"
         + "<td>" + cartArray[i].name + "</td>" 
         + "<td>(" + cartArray[i].price + ")</td>"
-        + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
-        + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
-        + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+        + "<td><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+        + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></td>"
+        + "<td><input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'></td>"
         + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
         + " = " 
         + "<td>" + cartArray[i].total + "</td>" 
