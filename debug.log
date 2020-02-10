@@ -1,2 +1,0 @@
-[0205/230457.958:ERROR:process_info.cc(98)] ReadProcessMemory UNICODE_STRING: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
-[0205/230458.098:ERROR:process_info.cc(551)] ReadProcessData failed

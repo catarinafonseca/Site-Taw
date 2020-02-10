@@ -56,15 +56,15 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                       <div class="item active">
-                        <img src="imagens/gosto.jfif" alt="Los Angeles" style="width:100%;">
+                        <img src="imagens-video/gosto.jfif" alt="Los Angeles" style="width:100%;">
                       </div>
                 
                       <div class="item">
-                        <img src="imagens/demi1.jpg" alt="Chicago" style="width:100%;">
+                        <img src="imagens-video/demi1.jpg" alt="Chicago" style="width:100%;">
                       </div>
                     
                       <div class="item">
-                        <img src="imagens/demi.jpg" alt="New york" style="width:100%;">
+                        <img src="imagens-video/demi.jpg" alt="New york" style="width:100%;" >
                       </div>
                     </div>
                 
@@ -114,13 +114,12 @@
         </div>
     </div>
 
-    <div class="jumbotron text-left" style="margin-bottom:0" id="footer">
-        <p>Subscribe for new updates</p>
+    <div style="margin-bottom:0" id="footer">
+        <h4>Subscribe for new updates</h4>
         <fieldset>
             <div>
-                <input required="required" class="email form-text form-email required"
-                    placeholder="Email Address (Required)" autocomplete="email" type="email"
-                    id="edit-submitted-email-address" name="email">
+                <input placeholder="Email Address (Required)" type="email"
+                id="email" name="submitted[email_address]" >
             </div>
             <div>
                 <label for="Terms">I agree to the reservation policy</label>
@@ -128,11 +127,10 @@
             </div>
             <br>
 
-            <div>
-                <input type="submit" class="button">
-            </div>
+            <button onclick="myFunction()">Subscribe</button>
         </fieldset>
     </div>
+    <script src="geral.js"></script>
 
 </body>
 

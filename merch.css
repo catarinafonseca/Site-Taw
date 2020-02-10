@@ -1,6 +1,4 @@
-
-  
-.show-cart li {
+ .show-cart li {
     display: flex;
 }
 
@@ -12,5 +10,12 @@
   width: 200px;
   height: 200px;
   align-self: center;
+}
+
+.col{
+padding: 20px;
+}
+.card{
+  color:black;
 }
   

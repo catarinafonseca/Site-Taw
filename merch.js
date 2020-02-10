@@ -1,3 +1,12 @@
+alert('This shop uses dolar($) as its oficial coin! ');
+$(document).on('show.bs.modal', '.modal', function () {
+  var zIndex = 1040 + (10 * $('.modal:visible').length);
+  $(this).css('z-index', zIndex);
+  setTimeout(function() {
+      $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+  }, 0);
+});
+
 var shoppingCart = (function() {
     // =============================
     // Private methods and propeties
@@ -117,17 +126,6 @@ var shoppingCart = (function() {
       return cartCopy;
     }
   
-    // cart : Array
-    // Item : Object/Class
-    // addItemToCart : Function
-    // removeItemFromCart : Function
-    // removeItemFromCartAll : Function
-    // clearCart : Function
-    // countCart : Function
-    // totalCart : Function
-    // listCart : Function
-    // saveCart : Function
-    // loadCart : Function
     return obj;
   })();
   

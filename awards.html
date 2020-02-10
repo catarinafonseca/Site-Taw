@@ -153,14 +153,13 @@
             </tr>
         </tbody>
         </table>
-    </div c>
-    <div class="jumbotron text-left" style="margin-bottom:0" id="footer">
-        <p>Subscribe for new updates</p>
+    </div >
+    <div style="margin-bottom:0" id="footer">
+        <h4>Subscribe for new updates</h4>
         <fieldset>
             <div>
-                <input required="required" class="email form-text form-email required"
-                    placeholder="Email Address (Required)" autocomplete="email" type="email"
-                    id="edit-submitted-email-address" name="submitted[email_address]">
+                <input placeholder="Email Address (Required)" type="email"
+                id="email" name="submitted[email_address]" >
             </div>
             <div>
                 <label for="Terms">I agree to the reservation policy</label>
@@ -168,12 +167,10 @@
             </div>
             <br>
 
-            <div>
-                <input type="submit" class="button">
-            </div>
+            <button onclick="myFunction()">Subscribe</button>
         </fieldset>
     </div>
-
+    <script src="geral.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 #header {
-    background-image: url("imagens/ola.jfif");
+    background-image: url("imagens-video/ola.jfif");
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,7 @@ button{
     border-radius: 8px;
     background-color: #808080;
 }
-.email{
+#email{
     background-color: black;
     border-top: black;
     border-right: black;
@@ -21,6 +21,7 @@ button{
     background-color: black;
     color: white;
     padding: 20px;
+    bottom: 0px;
 
 }
 body{

@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <h2>Newest release:</h2>
-                <div class="img"><img src="../Site-Taw-1/imagens/Anyone-song.png" width="300" height="300"></div>
+                <div class="img"><img src="imagens-video/Anyone-song.png" width="300" height="300"></div>
                 <div class="p1">
                     <p>Demi performed this song at the 62nd Annual Grammy Awards on January 26, 2020, her first
                         performance since suffering a near-fatal drug overdose in July 2018. That same day, it was
@@ -55,7 +55,7 @@
             </div>
             <div class="col-sm-8">
                 <h2>Video Lyrics</h2>
-                <iframe width="640" height="360" src="Demi Lovato - Anyone (Lyrics).webm" frameborder="0"
+                <iframe width="640" height="360" src="imagens-video/Demi Lovato - Anyone (Lyrics).webm" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -63,13 +63,12 @@
     </div>
 
 
-    <div class="jumbotron text-left" style="margin-bottom:0" id="footer">
-        <p>Subscribe for new updates</p>
+    <div style="margin-bottom:0" id="footer">
+        <h4>Subscribe for new updates</h4>
         <fieldset>
             <div>
-                <input required="required" class="email form-text form-email required"
-                    placeholder="Email Address (Required)" autocomplete="email" type="email"
-                    id="edit-submitted-email-address" name="submitted[email_address]">
+                <input placeholder="Email Address (Required)" type="email"
+                        id="email" name="submitted[email_address]" >
             </div>
             <div>
                 <label for="Terms">I agree to the reservation policy</label>
@@ -77,13 +76,10 @@
             </div>
             <br>
 
-            <div>
-                <input type="submit" class="button">
-
-            </div>
+            <button onclick="myFunction()">Subscribe</button>
         </fieldset>
     </div>
-
+    <script src="geral.js"></script>
 </body>
 
 </html>
