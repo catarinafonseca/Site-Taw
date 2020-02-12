@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="geral.css">
 </head>
@@ -62,10 +63,9 @@
         </div>
     </div>
 
-
     <div style="margin-bottom:0" id="footer">
         <h4>Subscribe for new updates</h4>
-        <fieldset>
+        <form id="subscribe" >
             <div>
                 <input placeholder="Email Address (Required)" type="email"
                         id="email" name="submitted[email_address]" >
@@ -77,7 +77,7 @@
             <br>
 
             <button onclick="myFunction()">Subscribe</button>
-        </fieldset>
+        </form>
     </div>
     <script src="geral.js"></script>
 </body>
