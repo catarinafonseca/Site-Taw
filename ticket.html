@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demi Lovato oficial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="geral.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/ticket.css">
+    <link rel="stylesheet" type="text/css" href="geral.css">
+</head>
+
+<body>
+    <div class="jumbotron text-left" style="margin-bottom:0" id="header">
+        <h1>Demi Lovato</h1>
+        <p>Love is louder than the pressure to be perfect.</p>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li class="active"><a href="ticket.html">Tickets</a></li class="active">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="imagens-video/arena.jfif" height="200" width="300">
+                <br>
+                <br>
+                <p id="book">Book your seat:</p>
+                <br>
+             
+                <div class="container1">
+                    <table border="2">
+                        <thead>
+                            <tr>
+                                <th colspan="3"></th>
+                            </tr>
+                            <tr>
+                                <th>Seats</th>
+                                <th>Amount</th>
+                                <th>Choice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>VIP</td>
+                                <td>$100</td>
+                                <td><button id="buy" onclick="cont1()">Buy Ticket</button></td>
+                            </tr>
+                            <tr>
+                                <td>Standing (Yellow)</td>
+                                <td> $80 </td>
+                                <td><button id="buy" onclick="cont2()">Buy Ticket</button></td>
+                            </tr>
+                            <tr>
+                                <td>1st Row Seating (Orange)</td>
+                                <td>$70</td>
+                                <td><button id="buy" onclick="cont3()">Buy Ticket</button></td>
+                            </tr>
+                            <tr>
+                                <td> 2nd Row Seating (Red) </td>
+                                <td> $60 </td>
+                                <td><button id="buy" onclick="cont4()">Buy Ticket</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            <br>
+            <div class="col-sm-4">
+                <h2 class="cart">Shopping Cart</h2>
+                <div class="flex-container">
+                    <p class="preco1">Total VIP tickets:</p>
+                    <p class="p1" id="Contagem1"></p>
+                    <p class="preco2">Total Standing:</p>
+                    <p class="p2" id="Contagem2"></p>
+                    <p class="preco3">Total 1st Row:</p>
+                    <p class="p3" id="Contagem3"></p>
+                    <p class="preco4">Total 2nd Row:</p>
+                    <p class="p4" id="Contagem4"></p>
+                    <p><button onclick="cont5()" class="preco5">Total:</button></p>
+                    <p class="p5" id="ContagemTotal"></p>
+                    <p><button onclick="final()" class="final">Checkout:</button></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 200px">
+            <iframe src="https://maps.google.com/maps?q=Coliseu+Porto+Ageas&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+        </div>
+    </div>
+    <p id="texto">The next show will happen in:</p>
+    <hr>
+    <p id="demo"></p>
+    
+
+    <div style="margin-bottom:0" id="footer">
+        <h4>Subscribe for new updates</h4>
+        <form id="subscribe">
+            <div>
+                <input placeholder="Email Address (Required)" type="email" id="email" name="submitted[email_address]">
+            </div>
+            <div>
+                <label for="Terms">I agree to the reservation policy</label>
+                <input type="checkbox" name="Terms" id="Terms">
+            </div>
+            <br>
+
+            <button onclick="myFunction()">Subscribe</button>
+        </form>
+    </div>
+    <script src="geral.js"></script>
+    <script src="ticket.js"></script>
+</body>
+
+</html>

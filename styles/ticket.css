@@ -1,0 +1,63 @@
+table,th,td{
+    border: 1px solid #808080;
+    color: black;
+    background-color:white;
+    text-align: center;
+    margin-left: 75px;
+}
+
+.col-sm-4{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.cart{
+    text-align: center;
+}
+
+.container1{
+    justify-content:center;
+    align-items:flex-start;
+}
+
+img{
+    margin-left: 75px;
+}
+
+#Contagem1{
+color: black;
+}
+
+.p2{
+    color: black;
+}
+
+.p3{
+    color: black;
+}
+
+.p4{
+    color: black;
+}
+.p5{
+    color: black;
+}
+#demo{
+    text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  color: #f2f2f2;
+}
+#texto{
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 40px;
+}
+#book{
+    margin-left: 75px;
+    color: #f2f2f2;
+    font-size: 20px;
+}
+#buy{
+    background-color:orange;
+}
