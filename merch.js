@@ -67,6 +67,16 @@ var shoppingCart = (function() {
       }
       saveCart();
     }
+     // Remove all items from cart
+  obj.removeItemFromCartAll = function(name) {
+    for(var item in cart) {
+      if(cart[item].name === name) {
+        cart.splice(item, 1);
+        break;
+      }
+    }
+    saveCart();
+  }
     
     // Count cart 
     obj.totalCount = function() {
@@ -176,3 +186,25 @@ var shoppingCart = (function() {
   });
   
   displayCart();
+
+  function verify(){
+    var name=document.getElementById('fname').value;
+    var email=document.getElementById('email').value;
+    var address=document.getElementById('adr').value;
+    var city=document.getElementById('city').value;
+    var state=document.getElementById('state').value;
+    var zip=document.getElementById('zip').value;
+    var cname=document.getElementById('cname').value;
+    var cardnumber=document.getElementById('cardnumber').value;
+    var expmonth=document.getElementById('expmonth').value;
+    var expyear=document.getElementById('expyear').value;
+    var cvv=document.getElementById('cvv').value;
+    
+    if(name==""||email==""||address==""||city==""||state==""||zip==""||cname==""||cardnumber==""||expmonth==""||expyear==""||cvv==""){
+      alert("Fill all the blank spaces");
+      return false;
+    }else{
+      return true;
+    }
+  }
+  
